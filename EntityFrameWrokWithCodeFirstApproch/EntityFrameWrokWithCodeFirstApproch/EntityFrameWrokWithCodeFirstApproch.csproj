@@ -162,11 +162,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Class\Department.cs" />
+    <Compile Include="Class\EmpDbContextSeeder.cs" />
     <Compile Include="Class\Employee.cs" />
     <Compile Include="Class\EmployeeDbModel.cs" />
+    <Compile Include="Class\Login.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -290,6 +293,11 @@
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
     <Content Include="Views\Employee\Delete.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\Register\Details.cshtml" />
+    <Content Include="Views\Register\Create.cshtml" />
+    <Content Include="Views\Register\Edit.cshtml" />
+    <Content Include="Views\Register\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

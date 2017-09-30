@@ -26,7 +26,10 @@ namespace EntityFrameWrokWithCodeFirstApproch
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
 
-            Database.SetInitializer<EmployeeDbModel>(new DropCreateDatabaseIfModelChanges<EmployeeDbModel>());
+
+            Database.SetInitializer<EmployeeDbModel>(new EmpDbContextSeeder());
+
+           // Database.SetInitializer<EmployeeDbModel>(new DropCreateDatabaseIfModelChanges<EmployeeDbModel>());
         }
     }
 }
